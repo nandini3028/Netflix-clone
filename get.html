@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #111;
+    }
+
+    .logo {
+      color: #e50914;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .search {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .user {
+      background-color: #e50914;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .featured {
+      background-image: url(Screenshot\ \(8\).png);
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: 40px;
+      position: relative;
+    }
+
+    .featured::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .featured-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .featured-title {
+      font-size: 2.2em;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .buttons button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .play {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .info {
+      background-color: rgba(109, 109, 110, 0.7);
+      color: #fff;
+    }
+
+    .movie-row {
+      padding: 10px;
+    }
+
+    .movie-row h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .movie-container {
+      display: flex;
+      gap: 25px;
+    
+      padding-bottom: 10px;
+    
+    }
+
+    .movie-container img {
+      width: 150px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+
+
+    }
+
+    .movie-container img:hover {
+      transform: scale(1.1);
+    }
+   
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">NETFLIX</h1>
+    <div class="nav-icons">
+      <i class="search">🔍</i>
+      <div class="user">U</div>
+    </div>
+  </header>
+
+  <section class="featured">
+
+          <div class="featured-content">
+      <h1 class="featured-title">The Stranger Things</h1>
+    
+      <div class="buttons">
+        <button class="play">▶ Play</button>
+        <button class="info">More Info</button>
+        <br><br><br>
+        <p> When a young boy vanishes, a small town<br> uncovers a mystery involving secret experiments <br>,terrifying supernatural forces and one strange<br> little girl.</p>
+      </div>
+    </div>
+
+  </section>
+<br><br>
+   <section class="movie-row">
+    <h1>Trending Now</h1>
+  <br>
+
+    <div class="movie-container">
+      <div class="movie">
+     <a href="https://youtu.be/RNj2cH5yjNA?si=zAxz4Lf8vGLjfcQu"> <img src="8Y7WrRK1iQHEX7UIftBeBMjPjWD.webp"></a>
+     <p i class="avatar"><B> AVATAR</B></p>
+      </div>
+
+ <div class="movie">     
+     <a href="https://youtu.be/klhZeA61TWw?si=GHQk8fNIncD8JPAQ"> <img src="OIP.webp" alt="Avengers "></a>
+       <p i class="avatar"><B> AVENGERS</B></p>
+      </div>
+      
+ <div class="movie">
+          <img src="OIP (5).webp" alt="211">
+          <p i class="avatar"><B> 211</B></p>
+      </div>
+    
+
+       <div class="movie">
+      <img src="OIP (1).webp" alt="The Scent">
+      <p i class="avatar"><B> THE SCENT</B></p>
+      </div>
+     
+
+        <div class="movie">
+      <img src="leader.webp" alt="Leader">
+      <p i class="avatar"><B> LEADER</B></p>
+      </div>
+      
+
+       <div class="movie">
+      <img src="hill.jpg" alt="Hill">
+      <p i class="avatar"><B> HILL</B></p>
+      </div>
+
+ <div class="movie">
+      <img src="justice league.webp" alt="Justice League">
+      <p i class="avatar"><B>JUSTICE LEAGUE</B></p>
+      </div>
+
+       <div class="movie">
+      <img src="step brothers.webp" alt="Step brothers">
+      <p i class="avatar"><B> STEP-BROTHERS</B></p>
+      </div>
+
+       <div class="movie">
+      <img src="damsel.webp" alt="Damsel">
+      <p i class="avatar"><B> DAMSEL</B></p>
+      </div>
+
+       <div class="movie">
+       <img src="river dale.webp" alt="River Dale">
+       <p i class="avatar"><B> RIVER DALE</B></p>
+      </div>
+
+        <div class="movie">
+        <img src="skyfall.jpg" alt="Sky Fall">
+        <p i class="avatar"><B> SKY FALL</B></p>
+      </div>
+
+         <div class="movie">
+         <img src="wanderlust.webp" alt="Wanderlust">
+         <p i class="avatar"><B> WANDERLUST</B></p>
+      </div>
+
+       </div>
+     
+  </section>
+
+  <section class="movie-row">
+    <h1>Critical Dramas</h1><br>
+    <div class="movie-container">
+
+       <div class="movie">
+      <img src="OIP (2).webp" alt="The Mother">
+      <p i class="avatar"><B> THE MOTHER</B></p>
+      </div>
+
+ <div class="movie">
+      <img src="OIP (3).webp" alt="Megan">
+      <p i class="avatar"><B> MEGAN</B></p>
+      </div>
+
+       <div class="movie">
+      <img src="black widow.jpeg" alt="Black widow">
+      <p i class="avatar"><B> BLACK WIDOW</B></p>
+      </div>
+
+
+       <div class="movie">
+       <img src="LIFE.jpeg" alt="Life">
+       <p i class="avatar"><B> LIFE</B></p>
+      </div>
+
+        <div class="movie">
+        <img src="you.webp" alt="You">
+        <p i class="avatar"><B> YOU</B></p>
+      </div>
+
+    
+    </div>
+  </section>
+</body>
+</html>
